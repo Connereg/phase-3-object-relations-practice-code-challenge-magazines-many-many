@@ -1,4 +1,4 @@
-# Object Relations Practice Code Challenge - Magazines
+re# Object Relations Practice Code Challenge - Magazines
 
 ## Introduction
 
@@ -79,23 +79,23 @@ Use Active Record association macros and Active Record query methods where appro
 
 #### Subscription
 
-- `Subscription#reader`
+#- `Subscription#reader`
   - should return the `Reader` instance for this subscription
-- `Subscription#magazine`
+#M- `Subscription#magazine`
   - should return the `Magazine` instance for this subscription
 
 #### Magazine
 
-- `Magazine#subscriptions`
+#- `Magazine#subscriptions`
   - returns a collection of all `Subscription` instances for this magazine
-- `Magazine#readers`
+#- `Magazine#readers`
   - returns a collection of all `Reader` instances who are subscribed to this magazine
 
 #### Reader
 
-- `Reader#subscriptions`
+#- `Reader#subscriptions`
   - should return a collection of all `Subscription` instances for this reader
-- `Reader#magazines`
+#reader- `Reader#magazines`
   - should return a collection of all `Magazine` instances that this reader is subscribed to
 
 ### Aggregate and Association Methods
@@ -107,7 +107,7 @@ Use Active Record association macros and Active Record query methods where appro
 
 #### Reader
 
-- `Reader#subscribe(magazine, price)`
+#- `Reader#subscribe(magazine, price)`
   - takes a `magazine` (an instance of the `Magazine` class) and a `price` (integer) as arguments, and creates a new `subscription` in the database associated with the magazine and the reader
 - `Reader#total_subcription_price`
   - returns the total price for all the reader's subscriptions
